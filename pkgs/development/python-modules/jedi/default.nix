@@ -66,7 +66,7 @@ buildPythonPackage rec {
     # https://github.com/davidhalter/jedi/issues/2064
     "test/test_api/test_interpreter.py::test_string_annotation"
     # type repr mismatch: Union[Type, int] vs Type | int
-    "test/test_inference/test_mixed.py::test_compiled_signature_annotation_string "
+    "test/test_inference/test_mixed.py::test_compiled_signature_annotation_string"
   ];
 
   meta = with lib; {
