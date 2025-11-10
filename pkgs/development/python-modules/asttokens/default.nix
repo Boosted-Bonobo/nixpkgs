@@ -7,7 +7,7 @@
   setuptools-scm,
 }:
 
-buildPythonPackage rec {
+buildPythonPackage {
   pname = "asttokens";
   version = "3.0.0-unstable-2025-11-08";
   pyproject = true;
