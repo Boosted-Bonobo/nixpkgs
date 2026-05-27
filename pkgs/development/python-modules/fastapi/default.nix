@@ -118,13 +118,6 @@ buildPythonPackage rec {
   ++ anyio.optional-dependencies.trio
   ++ optional-dependencies.all;
 
-  pytestFlags = [
-    # ignoring deprecation warnings to avoid test failure from
-    # tests/test_tutorial/test_testing/test_tutorial001.py
-    "-Wignore::DeprecationWarning"
-    "-Wignore::pytest.PytestUnraisableExceptionWarning"
-  ];
-
   disabledTests = [
     # Coverage test
     "test_fastapi_cli"
